@@ -27,34 +27,41 @@ module class_top#(
     CLAUSE_WIDTH = (35 + HEIGHT + WIDTH)*2
 )(  
     input clk,
-    input [1:0]prst,
+    input rst,
     input [18:0] model_params,
-    input [511:0]total_img,
+    input [127:0]tdata,
+    input [255:0]clause_write,
+    input [255:0]weight_write,
     input tvalid,
-    input [$clog2(CLAUSEN)-1:0]bram_addr_a,
-    input [$clog2(CLASSN)-1:0]bram_addr_a2,
-    input [CLAUSE_WIDTH - 1:0]clause_write,
-    input [9*CLAUSEN - 1:0]weight_write,
+    input [15:0] tkeep, 
+    input tlast,
+    output reg [31:0]bram_addr_a,
+    output reg [31:0]bram_addr_a2,
     output reg tready,
-    output reg [4:0] output_params
+    output enb,
+    output reg [3:0] output_params,
+    output reg [31:0]web ,
+    output reg [255:0] dinb
 );
-    wire img_rst,rst;
+    wire img_rst;
+    wire [127:0]total_img;
+    assign total_img = tdata;
+    assign enb = 1;
     wire [2:0]stride;
     reg [3:0] class_op;
     wire [3:0] class_op_wire;
     wire wea,wea2;
-    assign img_rst = prst[1];
-    assign rst = prst[0];
+    wire [31:0]bram_addr_a_wire;
+    wire [31:0]bram_addr_a2_wire;
     reg [((HEIGHT + 8)*WIDTH)-1:0] total_memory;
     (* keep = "true" *)wire [8:0] clause = model_params[14:6];
     (* keep = "true" *) wire img_done_wire;
-    reg img_done;
-    integer i = 0,j,k,l,x;
-    wire done_rmu,done;
+    assign img_rst = rst ? 1 : img_done_wire;
+    integer i,j,k,l,x;
+    wire done_rmu;
     genvar idx;
     wire clause_act; 
     reg [5:0] cycle_count;
-    (* keep = "true" *) reg [3:0]class_no = 0;
     reg shift_enable;
     wire [7:0] pixel_out;
     wire [3:0]classes = model_params[18:15];
@@ -67,8 +74,8 @@ module class_top#(
     wire [2:0] patch_size;
     assign patch_size = model_params[2:0];
     assign stride = model_params[5:3];
-    assign wea = (!rst && (bram_addr_a < clause)) ? 1'b1 : 1'b0;
-    assign wea2 = (!rst && (bram_addr_a2 < classes)) ? 1'b1 : 1'b0;
+    assign wea = (!rst && (bram_addr_a <  { {23{1'b0}}, clause })) ? 1'b1 : 1'b0;
+    assign wea2 = (!rst && (bram_addr_a2 < classes * 5)) ? 1'b1 : 1'b0;
     reg img_load_done;
     assign reset = wea || rst || !img_load_done || wea2;
     wire[6:0] processor_in1,processor_in2,processor_in3,processor_in4,processor_in5,processor_in6,processor_in7,processor_in8;
@@ -76,7 +83,23 @@ module class_top#(
     wire [HEIGHT - 1:0] p1y1,p2y1,p3y1,p4y1,p5y1,p6y1,p7y1,p8y1;
     genvar b; 
     wire cycle_change;
+    always@(posedge clk)begin
+    web <= 31'b0;
+    dinb <= 255'b0;
     
+    if(rst)begin
+    	i <= 0;
+        bram_addr_a <= 0;
+        bram_addr_a2 <= 0;
+    end
+    else begin
+        if(wea2)bram_addr_a2 <= bram_addr_a2 + 1;
+        else if(wea)bram_addr_a <= bram_addr_a + 1;
+        
+    end
+    end
+    assign bram_addr_a_wire = bram_addr_a;
+    assign bram_addr_a2_wire = bram_addr_a2;
      buffer #(.BUF_WIDTH(WIDTH+2)) Buf(
         .clk(clk),
         .rst(reset),
@@ -105,11 +128,8 @@ module class_top#(
         .patch_size(patch_size),
         .stride(stride),
         .done(done_rmu),
-        .img_width(WIDTH),
-        .img_height(HEIGHT),
         .xcor1(img_width_count),
         .pixel_in(pixel_out),
-        .conv_arch_done(done),
         .residues(residues_rmu),
         .cycle_counts(cycle_count),
         .cycle_detect(cycle_change),
@@ -122,13 +142,11 @@ module class_top#(
         .p5y1(p5y1), .p6y1(p6y1),.p7y1(p7y1), .p8y1(p8y1),
         .clause_act(clause_act)
     );
-
-    // 1. Registers that need async reset (like tready, x, counters)
-always @(posedge clk or posedge rst) begin
+always @(posedge clk) begin
     if (rst) begin
-        tready       <= 0;
+        tready <= 0;
         output_params <= 0;
-        x            <= 0;
+        x            <= -1;
         img_load_done <= 0;
         cycle_count  <= 1;
         k            <= 0;
@@ -137,31 +155,27 @@ always @(posedge clk or posedge rst) begin
         pixel_in     <= 0;
     end else begin
         if (img_rst) begin
+        tready <= 0;
             shift_enable <= 0;
             pixel_in <= 0;
-            j <= 0;
-            k <= 0;
-            cycle_count  <= 1;
-            x            <= 0;
+            x            <= -1;
             img_load_done <= 0;
-            img_done <= 0;
-            output_params = 5'b0;
         end 
         else begin
+        tready <= tvalid && !img_load_done && !wea && !wea2;
         class_op <= class_op_wire;
-        tready <= tvalid && !img_load_done;
-        img_done <= img_done_wire;
-        output_params = {img_done,class_op[3:0]};
-        if (!img_rst && tready) begin
-            for (i = 0; i < 512; i = i + 1) begin
-                total_memory[x*512 + i] <= total_img[i];
+        if (!(img_rst || img_load_done || wea || wea2)) begin
+            for (i = 0; i < 128; i = i + 1) begin
+                total_memory[x*128 + i] <= total_img[i];
             end
             x <= x + 1;
         end
 
-        if (x == WIDTH*HEIGHT / 512)
+        if (x == 7)begin
             img_load_done <= 1;
-        if (!reset) begin
+            tready <= 0;
+        end
+        if (!reset && !cycle_change) begin
             shift_enable <= 1;
             pixel_in <= {
                 total_memory[((j+7)*WIDTH)+k],
@@ -175,12 +189,19 @@ always @(posedge clk or posedge rst) begin
             };
             k <= k + 1;
         end
-        if (cycle_change && !reset) begin
+        else if (cycle_change && !reset) begin
             j <= j + 8;
             k <= 0;
             cycle_count <= cycle_count + 1;
         end
+        else begin
+        j <= 0;
+            k <= 0;
+            cycle_count  <= 1;
+         end
     end
+if(img_done_wire)output_params <= class_op;
+else output_params <= output_params;
 end
 end
 
@@ -198,14 +219,13 @@ end
             .patch_size(patch_size),
             .stride(stride),
             .wea(wea),
-            .bram_addr_a(bram_addr_a),
+            .bram_addr_a(bram_addr_a_wire),
             .clause_write(clause_write),
             .pe_en(pe_en),
             .clauses(clause),
-            .classes(classes),
             .weight_write(weight_write),
             .wea2(wea2),
-            .bram_addr_a2(bram_addr_a2),
+            .bram_addr_a2(bram_addr_a2_wire),
             .clause_act(clause_act),
             .processor_in1(processor_in1),
             .processor_in2(processor_in2),

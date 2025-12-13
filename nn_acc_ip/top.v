@@ -17,17 +17,16 @@ module top#(
     input [2:0] patch_size,
     input [2:0] stride,
     input [8:0]clauses,
-    input [$clog2(CLASSN)-1:0]classes,
-    input [CLAUSE_WIDTH - 1:0]clause_write,
+    input [255:0]clause_write,
     input [7:0] pe_en,
-    input [$clog2(CLASSN)-1:0]bram_addr_a2,
-    input [(9*CLAUSEN) - 1:0]weight_write,
+    input [31:0]bram_addr_a2,
+    input [255:0]weight_write,
     input done_rmu,
     input [6:0] processor_in1,processor_in2,processor_in3,processor_in4,processor_in5,processor_in6,processor_in7,processor_in8,
     input [HEIGHT - 1:0]p1y1,p2y1,p3y1,p4y1,p5y1,p6y1,p7y1,p8y1,
     input [WIDTH - 1:0] p1x1,
     input wea,wea2,
-    input [$clog2(CLAUSEN)-1:0]bram_addr_a,
+    input [31:0]bram_addr_a,
     input clause_act,
     output reg [$clog2(CLASSN)-1:0] class_op,
     output reg done
@@ -35,10 +34,9 @@ module top#(
     wire [CLAUSEN-1:0] clause_output;
     wire [CLAUSEN - 1:0] clause_op;
     reg signed [$clog2(128*CLAUSEN):0] temp_sum[CLASSN-1:0]; 
-    reg [$clog2(CLASSN)-1:0]class_no = 0;
     wire reset,done_conv;
-    reg done_seen;
     assign reset = wea || rst || wea2 || img_rst;
+    assign done_seen = done || done_conv;
     wire [0:CLAUSEN-1] done_conv_arch;
     wire [6:0] processor_out [1: CLAUSEN][0:7];  // stage, processor
     wire [WIDTH-1:0] po_x1 [1:CLAUSEN];
@@ -58,7 +56,34 @@ module top#(
     reg [$clog2(CLAUSEN):0]clause_no;
     reg ip_done_reg;
 
-    reg signed [17:0] max_sum = -10000;
+    reg signed [17:0] max_sum;
+reg [$clog2(CLASSN):0] cnt = 0;
+reg done_conv_long = 0;
+
+always @(posedge clk) begin
+    if(reset) begin
+        cnt <= 0;
+        done_conv_long <= 0;
+    end
+    else begin
+        // New pulse came ? reload counter
+        if(done_conv) begin
+            cnt <= CLASSN - 1;
+            done_conv_long <= 1;
+        end
+
+        // Continue stretching
+        else if(cnt != 0) begin
+            cnt <= cnt - 1;
+            done_conv_long <= 1;
+        end
+
+        // Counter expired ? deassert
+        else begin
+            done_conv_long <= 0;
+        end
+    end
+end
 
 
     always @(posedge clk)begin
@@ -74,31 +99,32 @@ module top#(
         end
         end
     end
-    always @(*)begin
+    always @(posedge clk)begin   //changes made combo to seqential
     if(reset)begin
-    class_op = 0;
-    max_sum = -1000;
+        class_op <= 0;
+        max_sum <= -1000;
+        kdx <= 0;
     end
-    else if(done_conv)begin
-        for(kdx = 0;kdx < CLASSN; kdx = kdx + 1)begin
-            if(temp_sum[kdx] > max_sum)begin
-            max_sum = temp_sum[kdx];
-            class_op = kdx;
-        end
-        end
-        end
-        done = done_conv;
+    else if(done_conv_long)begin
+        if($signed(temp_sum[kdx]) > $signed(max_sum))begin
+        max_sum <= temp_sum[kdx];
+        class_op <= kdx;
     end
-    
+    kdx <= kdx + 1;
+    end
+    if(kdx == CLASSN)done <= 1'b1;
+    else done <= 1'b0;
+    end
     always @(posedge clk)begin
     if(reset)begin
-        clause_no = 1;
-        ip_done_reg = 0;
+        clause_no <= 1;
+        ip_done_reg <= 0;
     end
-    if(done_rmu)ip_done_reg = 1;
-    else if(ip_done_reg)clause_no = clause_no + 1;
+    else begin
+    if(done_rmu)ip_done_reg <= 1;
+    else if(ip_done_reg)clause_no <= clause_no + 1;
     end
-    
+    end
     
 assign done_conv = done_conv_arch[clauses-1];    
     genvar id,idx;
@@ -106,15 +132,13 @@ assign done_conv = done_conv_arch[clauses-1];
     assign clause_output = rst ? 0 :clause_op;
     generate
     for (idx = 0; idx < CLASSN; idx = idx + 1) begin : wt_chain_pos
-        weight_adder #(.CLAUSEN(CLAUSEN),
-                .CLASSN(CLASSN))W(
+        weight_adder #(.CLAUSEN(CLAUSEN))W(
                 .clk(clk),
                 .rst(rst),
-                .wea2(wea2),
-                .bram_addr_a2(bram_addr_a2),
-                .bram_addr_2(idx),
-                .weight_write(weight_write),
+                .valid((bram_addr_a2 / 5)== idx),
+                .offset(bram_addr_a2 % 5),
                 .clauses(clauses),
+                .weight_write(weight_write),
                 .clause_no(clause_no),
                 .weight(weight[idx])
                 );
@@ -122,10 +146,11 @@ assign done_conv = done_conv_arch[clauses-1];
     end
     endgenerate
     
-    
+    wire [$clog2(CLAUSEN)-1:0] id_bus [(CLAUSEN)-1:0];
     
 generate
     for (id = 0; id < CLAUSEN; id = id + 1) begin : conv_chain_pos
+    assign id_bus[id] = id[$clog2(CLAUSEN)-1:0];
     if(id == 0 || id==1)begin
                 conv_arch  #(
                 .IMG_WIDTH(WIDTH), 
@@ -137,19 +162,14 @@ generate
             .clk(clk),
             .rst(rst),
             .img_rst(img_rst),
-            .clause_no(id),
             .ipdone(done_rmu),
             .opdone_reg(done_conv_arch[id]),
             .stride(stride),
             .pe_en(pe_en),
-            .class_no(class_no),
-            .done_final(done_conv),
-            .wea(wea),
             .patch_size(patch_size),
-            .bram_addr_a(bram_addr_a),
+            .valid(bram_addr_a == id),
             .clause_op(clause_op[id]),
             .clause_act(clause_act),
-            .clauses(clauses),
             .clause_write(clause_write),
             .prev_clause_op(clause_output[id]),
             .clause_done(clause_done[id+1]),
@@ -203,17 +223,12 @@ generate
             .clk(clk),
             .rst(rst || !(id < clauses)),
             .img_rst(img_rst),
-            .wea(wea),
             .stride(stride),
             .pe_en(pe_en),
-            .clause_no(id),
             .ipdone(done_conv_arch[id-1]),
             .opdone_reg(done_conv_arch[id]),
-            .done_final(done_conv),
-            .bram_addr_a(bram_addr_a),
-            .class_no(class_no),
             .patch_size(patch_size),
-            .clauses(clauses),
+            .valid(bram_addr_a == id),
 //            .clause_result(clause_result[id]),
             .clause_write(clause_write),
             .clause_op(clause_op[id]),

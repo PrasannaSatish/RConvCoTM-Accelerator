@@ -20,35 +20,35 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module processor_en(clk, rst, patch_size, stride, cycle_detect, p_en, done, done_convarch,p_en_rmu);
+module processor_en(clk, rst, patch_size, stride, cycle_detect, p_en, done,p_en_rmu);
 input clk,rst;
 input [2:0] patch_size, stride;
 output reg [7:0]p_en;
 input cycle_detect;
-input  done, done_convarch;
+input  done;
 output reg [7:0]p_en_rmu;
 reg [2:0] cycle_counter, max_cycle, repeat_cycle;
 reg done_rmu_seen;
 always @(posedge clk)begin
-    if(rst)done_rmu_seen = 1'b0;
-    else if(done)done_rmu_seen = 1'b1;
+    if(rst)done_rmu_seen <= 1'b0;
+    else if(done)done_rmu_seen <= 1'b1;
 end
-always@(*)
+always @(posedge clk)
 begin
-    if(rst)
-    begin
-        cycle_counter = 1;
+    if (rst) begin
+        cycle_counter <= 1;
     end
     else begin
-        if(cycle_detect)
-        begin
-            if(cycle_counter == max_cycle)cycle_counter = repeat_cycle;
-            else cycle_counter = cycle_counter + 1;
+        if (cycle_detect) begin
+            if (cycle_counter == max_cycle)
+                cycle_counter <= repeat_cycle;
+            else
+                cycle_counter <= cycle_counter + 1;
         end
-        else cycle_counter = cycle_counter;
+        // else: do nothing, keep value
     end
-    
 end
+
 
 always@(*)
 begin
@@ -154,7 +154,7 @@ begin
     endcase
 end
 
-always@(posedge clk or posedge rst)
+always@(posedge clk)
 begin
     if(rst) begin
         p_en <= 8'b00000000;
@@ -276,19 +276,18 @@ begin
                         else if(cycle_counter == 4) p_en <= 8'b00100000;
                         else if(cycle_counter == 5) p_en <= 8'b01000000;
                         else if(cycle_counter == 6) p_en <= 8'b10000000;
-                        else if(cycle_counter) p_en <= 8'b00000011;
+                        else if(cycle_counter == 7) p_en <= 8'b00000011;
                         else p_en <= 8'b00000000;   
                     end                
                 end
                 default : p_en <= 8'b00000000;
 
         endcase
-    if(done_rmu_seen)p_en_rmu = 0;
-    else p_en_rmu = p_en;
+    if(done_rmu_seen)p_en_rmu <= 0;
+    else p_en_rmu <= p_en;
 end
 end
 endmodule
-
 
 
 

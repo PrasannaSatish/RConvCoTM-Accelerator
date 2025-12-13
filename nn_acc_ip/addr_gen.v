@@ -30,8 +30,6 @@ parameter  HEIGHT = 32
     input [2:0] patch_size,
     input [2:0] k,
     input [$clog2(WIDTH):0] xcor1,
-    input [$clog2(WIDTH):0] image_width,
-    input [$clog2(HEIGHT):0] image_height,
     input en,
     output reg clause_active,
     (* keep = "true" *)output reg [HEIGHT - 1:0] y1,
@@ -42,10 +40,8 @@ parameter  HEIGHT = 32
 integer i;
 reg [8:0] ycor1,xcor1d;// xcor delay to match with pe_en
 reg [5:0] cycle_count;
-reg ena;
     always @(posedge clk) begin
     xcor1d <= xcor1;// xcor delay to match with pe_en
-    ena <= en;
     if(rst) begin
     ycor1 <= 0;
     clause_active <= 0;
@@ -112,8 +108,6 @@ reg ena;
     end
     end
     always @(*) begin
-    x1 = 31'b0;
-    y1 = 31'b0;
     if (ycor1 != 0) begin
        for (i = 0; i < HEIGHT; i = i + 1) begin
             if (i < ycor1)
@@ -128,7 +122,7 @@ reg ena;
     end
     if (xcor1d != 0) begin
         for (i = 0; i < WIDTH; i = i + 1) begin
-            if (i < xcor1d-1)
+            if (i < xcor1)
 //           for (i = WIDTH - 1; i >= 0; i = i - 1) begin
 //           if  (i >= WIDTH - xcor1 + 1)
                 x1[i] = 1'b1;
@@ -139,7 +133,7 @@ reg ena;
         x1 = 0;
     end
     cycle_count = cycle_counts - 1;
-    if(y1[HEIGHT - patch_size - 1] && x1[WIDTH - 2])done = 1'b1;
+    if(y1[HEIGHT - patch_size - 1] && x1[WIDTH - 1])done = 1'b1;
 //    if(y1[patch_size] && x1[2]) done = 1'b1;
     else done = 1'b0; 
 end

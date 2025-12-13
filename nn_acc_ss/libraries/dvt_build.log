@@ -1,0 +1,130 @@
+*** Start analyzing build configuration ***
+INFO: Auto-config - Scanning: /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries
+INFO: Auto-config - VLOG: /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries
+INFO: Auto-config - Wrote:
+    .dvt/default.build.auto.1
+*** List of included argument files ***
+    Build configuration file:  /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/.dvt/default.build
+    -f /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/.dvt/default.build.auto.1
+*** List of invocations ***
+Invocation #1 +dvt_init+dvt in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/.dvt/default.build.auto.1 at line 9
+*** Done analyzing build configuration [59 ms] ***
+
+*** Start SystemVerilog build ***
+*** Invocation #1***
+Loading (1) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v [7 ms, 24 lines, Verilog_2001] ...
+Loading (2) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/clauses_bram.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/clauses_bram.v [12 ms, 36 lines, Verilog_2001] ...
+Loading (3) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v [0 ms, 11 lines, Verilog_2001] ...
+Loading (4) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_i.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_i.v [1 ms, 11 lines, Verilog_2001] ...
+Loading (5) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o.v [0 ms, 11 lines, Verilog_2001] ...
+Loading (6) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o_1.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o_1.v [1 ms, 11 lines, Verilog_2001] ...
+Loading (7) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/nn_acc_ss.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/nn_acc_ss.v [0 ms, 7 lines, Verilog_2001] ...
+Loading (8) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/rams.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/rams.v [0 ms, 2 lines, Verilog_2001] ...
+Loading (9) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/sram.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/sram.v [10 ms, 50 lines, Verilog_2001] ...
+Loading (10) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v [2 ms, 50 lines, Verilog_2001] ...
+Loading (11) /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/weights_bram.v ...
+Done /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/weights_bram.v [2 ms, 36 lines, Verilog_2001] ...
+*** Done invocation #1 [35 ms] ***
+*** Done parsing [LT 17 ms, PT 35 ms] ***
+*** Total number of lines [249] ***
+*** Error: VERILOG_2001: Unexpected token 'm_tready'
+    at line 13 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:13 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Unexpected token 'm_tvalid'
+    at line 3 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v:3 [compile index 3][invocation 1]
+Performing post full build actions ...
+Performing post full build step 1 (SRI) [0 ms] ...
+Performing post full build step 2 (RI) [0 ms] ...
+Performing post full build step 3 (RCP) [0 ms] ...
+*** Files summary [11 total, 11 unique, 0 optimized] ***
+*** Done SystemVerilog build [150 ms] ***
+
+*** Start mixed mode extension build ***
+Performing mixed post full build step (VLOG - RI) [0 ms] ...
+*** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
+*** Top design candidates: work.blk_mem_gen_0, work.src, work.blk_mem_gen_1
+Performing mixed post full build step (MIXED - ELAB) [171 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [51 ms] ...
+*** Error: NON_EXISTING_PORT: Non existing port 'gpio_io_o' of module 'axi_gpio_i'
+    at line 44 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:44 [compile index 10]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'u_axi_gpio_o_i1' of module 'axi_gpio_i' is missing port connection to input 'gpio_io_i'
+    at line 41 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:41 [compile index 10]
+*** Warning: UNELABORATED_MODULE: Module 'work.axis_if' is not elaborated
+    at line 4 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:4 [compile index 1]
+*** Warning: UNELABORATED_MODULE: Module 'work.dma' is not elaborated
+    at line 1 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v:1 [compile index 3]
+*** Warning: UNELABORATED_MODULE: Module 'work.nn_acc_ss' is not elaborated
+    at line 1 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/nn_acc_ss.v:1 [compile index 7]
+Performing mixed post full build step (VLOG - RD) [0 ms] ...
+Performing mixed post full build step (VLOG - US) [51 ms] ...
+*** Warning: PARAMETER_NEVER_USED: Parameter 'DATA_WIDTH' is never used
+    at line 6 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:6 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clk' is never used
+    at line 9 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:9 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'rst_n' is never used
+    at line 10 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:10 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm_tkeep' is never used
+    at line 15 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:15 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm_tlast' is never used
+    at line 16 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:16 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm_tvalid' is never used
+    at line 17 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/axi_dma.v:17 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm_tkeep' is never used
+    at line 5 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v:5 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm_tlast' is never used
+    at line 6 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v:6 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'm_tvalid' is never used
+    at line 7 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/dma.v:7 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aclk' is never used
+    at line 3 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_i.v:3 [compile index 4]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aresetn' is never used
+    at line 4 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_i.v:4 [compile index 4]
+*** Warning: SIGNAL_NEVER_USED: Signal 'gpio_io_i' is never used
+    at line 7 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_i.v:7 [compile index 4]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aclk' is never used
+    at line 3 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o.v:3 [compile index 5]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aresetn' is never used
+    at line 4 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o.v:4 [compile index 5]
+*** Warning: SIGNAL_NEVER_USED: Signal 'gpio_io_o' is never used
+    at line 7 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o.v:7 [compile index 5]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aclk' is never used
+    at line 3 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o_1.v:3 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aresetn' is never used
+    at line 4 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o_1.v:4 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'gpio_io_o' is never used
+    at line 7 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/gpio_o_1.v:7 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PADDR' is never used
+    at line 10 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:10 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PSEL' is never used
+    at line 11 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:11 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PENABLE' is never used
+    at line 12 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:12 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PWRITE' is never used
+    at line 13 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:13 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PWDATA' is never used
+    at line 14 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:14 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PRDATA' is never used
+    at line 15 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:15 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PREADY' is never used
+    at line 16 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:16 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'PSLVERR' is never used
+    at line 17 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:17 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'clause_write' is never used
+    at line 19 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:19 [compile index 10]
+*** Warning: SIGNAL_NEVER_USED: Signal 'weight_write' is never used
+    at line 20 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:20 [compile index 10]
+*** Warning: SIGNAL_NEVER_READ: Signal 'gpio_io_o' is never read (connected to sub-instance output port)
+    at line 23 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:23 [compile index 10]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'gpio_io_i' is never written
+    at line 24 in /home/IITBBS0125_10128/Documents/soc_project/Accelerator/libraries/src.v:24 [compile index 10]
+*** Done mixed mode extension build [282 ms] ***
+*** Total build time [529 ms] ***

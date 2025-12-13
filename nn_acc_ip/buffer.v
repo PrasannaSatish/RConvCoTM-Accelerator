@@ -44,7 +44,7 @@ integer row, col;
 assign pixel_out = pixel_in;
 
 
-always@(posedge clk or posedge rst)
+always@(posedge clk)
 begin
     if(rst)
         begin
@@ -98,39 +98,38 @@ begin
 end    
 
 //connecting multiplexers
-(* keep = "true" *) wire mux_out [0:BUF_HEIGHT-1][0:BUF_WIDTH-1];
+(* keep = "true" *) wire mux_out [2:BUF_HEIGHT-1][3:BUF_WIDTH-1];
 genvar p, q;
 generate
 for (p=2; p<BUF_HEIGHT; p = p+1) begin
-    for (q=3; q<BUF_WIDTH-1; q = q+1)
-        begin
-        assign mux_out [p] [q] = mux_sel[p][q] ? buffer[p][q] : mux_out[p][q+1] ; 
-        assign residues[p] =  shift_enable ? mux_out[p][img_width-1]: 1'b0;   
-        end
-   
-end     
+
+    // last stage should not recurse further
+    assign mux_out[p][BUF_WIDTH-1] = buffer[p][BUF_WIDTH-1];
+
+    for (q=3; q<BUF_WIDTH-1; q = q+1) begin
+        assign mux_out[p][q] = mux_sel[p][q] ? buffer[p][q] : mux_out[p][q+1];
+    end
+
+    assign residues[p] = shift_enable ? mux_out[p][img_width-1] : 1'b0;
+
+end
 endgenerate
 
-always@(posedge clk or posedge rst)
-begin
-    if(rst) begin
+always @(posedge clk) begin
+    if (rst) begin
         cycle_change <= 0;
         img_width_count <= 0;
     end
-    else begin
-        if(shift_enable) 
-        begin
+    else if (shift_enable) begin
+        if (img_width_count == img_width-1) begin
+            img_width_count <= -1;     // reset to 0 at end of width
+            cycle_change <= 1;
+        end
+        else begin
             img_width_count <= img_width_count + 1;
-            cycle_change <=0 ;
-            if(img_width_count == img_width-1) 
-                begin
-                    cycle_change <= 1;
-                    img_width_count <= -1;                
-                end
+            cycle_change <= 0;
         end
     end
-
-
 end
 
 endmodule

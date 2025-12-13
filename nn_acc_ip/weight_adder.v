@@ -21,43 +21,35 @@
 
 
 module weight_adder#(
-    parameter CLAUSEN = 10,
-              CLASSN = 10
+    parameter CLAUSEN = 10
 )(  input clk,
     input rst,
-    input wea2,
-    input [$clog2(CLASSN)-1:0]bram_addr_a2,
-    input [$clog2(CLASSN)-1:0]bram_addr_2,
-    input [(9*CLAUSEN) - 1:0]weight_write,
-    input [$clog2(CLAUSEN)-1:0]clauses,
-    input [$clog2(CLAUSEN)-1:0]clause_no,
+    input valid,
+    input [255:0]weight_write,
+    input [31:0]offset,
+    input [$clog2(CLAUSEN):0]clauses,
+    input [$clog2(CLAUSEN):0]clause_no,
     output reg [8:0]weight
     );
-    wire [(9*CLAUSEN) - 1:0] dout; 
+    reg [1279:0] dout; 
     reg [8:0] w;
     reg [8:0] tcomp;
-    reg signed [17:0] ext_w;
-    reg signed [17:0] max_sum = -10000;
-    blk_mem_gen_1 weights_inp (
-        .clka(clk),            
-        .ena(1'b1),               
-        .wea(wea2),            
-        .addra(bram_addr_a2),   
-        .dina(weight_write),
-                   
-        .clkb(clk),           
-        .enb(1'b1),               
-        .addrb(bram_addr_2),   
-        .doutb(dout)        
-    );
+    always @(posedge clk)begin
+        if(rst)dout <= 0;
+        else if(valid && offset == 0)dout[255:0] <= weight_write;
+        else if(valid && offset == 1)dout[511:256] <= weight_write;
+        else if(valid && offset == 2)dout[767:512] <= weight_write;
+        else if(valid && offset == 3)dout[1023:768] <= weight_write;
+        else if(valid && offset == 4)dout[1279:1024] <= weight_write;
+    end
     always @(posedge clk)begin
         w = dout[(clauses - clause_no - 1)*9 +: 9];
             if (w[8]) begin
                 tcomp = ~w + 1'b1;
-                weight = -tcomp;
+                weight <= -tcomp;  //cng
             end
             else begin
-                weight = w;
+                weight <= w;    //cng
             end
     end
     

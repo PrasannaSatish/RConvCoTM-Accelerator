@@ -26,7 +26,7 @@ input [2:0] stride, patch_size;
 output reg conv_enable ;
 reg [2:0] init_counter, on_counter, off_counter ;
 
-always@(posedge clk or posedge rst) 
+always@(posedge clk) 
 begin
     if(rst) begin
         conv_enable <= 0;
