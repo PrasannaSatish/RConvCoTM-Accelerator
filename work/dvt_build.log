@@ -1,0 +1,43 @@
+*** Start analyzing build configuration ***
+INFO: Auto-config - Scanning: /home/IITBBS0125_10108/Capstone_Project__/work
+INFO: Auto-config - VLOG: /home/IITBBS0125_10108/Capstone_Project__/work
+INFO: Auto-config - Wrote:
+    .dvt/default.build.auto.1
+*** List of included argument files ***
+    Build configuration file:  /home/IITBBS0125_10108/Capstone_Project__/work/.dvt/default.build
+    -f /home/IITBBS0125_10108/Capstone_Project__/work/.dvt/default.build.auto.1
+*** List of invocations ***
+Invocation #1 +dvt_init+dvt in /home/IITBBS0125_10108/Capstone_Project__/work/.dvt/default.build.auto.1 at line 9
+*** Done analyzing build configuration [55 ms] ***
+
+*** Start SystemVerilog build ***
+*** Invocation #1***
+Loading (1) /home/IITBBS0125_10108/Capstone_Project__/work/axi_gpio_0.v ...
+Done /home/IITBBS0125_10108/Capstone_Project__/work/axi_gpio_0.v [4 ms, 11 lines, Verilog_2001] ...
+*** Done invocation #1 [6 ms] ***
+*** Done parsing [LT 9 ms, PT 6 ms] ***
+*** Total number of lines [11] ***
+Performing post full build actions ...
+Performing post full build step 1 (SRI) [1 ms] ...
+Performing post full build step 2 (RI) [0 ms] ...
+Performing post full build step 3 (RCP) [0 ms] ...
+*** Files summary [1 total, 1 unique, 0 optimized] ***
+*** Done SystemVerilog build [122 ms] ***
+
+*** Start mixed mode extension build ***
+Performing mixed post full build step (VLOG - RI) [0 ms] ...
+*** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
+Performing mixed post full build step (MIXED - ELAB) [4 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [52 ms] ...
+*** Warning: UNELABORATED_MODULE: Module 'work.axi_gpio_0' is not elaborated
+    at line 1 in /home/IITBBS0125_10108/Capstone_Project__/work/axi_gpio_0.v:1 [compile index 1]
+Performing mixed post full build step (VLOG - RD) [0 ms] ...
+Performing mixed post full build step (VLOG - US) [50 ms] ...
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aclk' is never used
+    at line 3 in /home/IITBBS0125_10108/Capstone_Project__/work/axi_gpio_0.v:3 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 's_axi_aresetn' is never used
+    at line 4 in /home/IITBBS0125_10108/Capstone_Project__/work/axi_gpio_0.v:4 [compile index 1]
+*** Warning: SIGNAL_NEVER_USED: Signal 'gpio_io_o' is never used
+    at line 7 in /home/IITBBS0125_10108/Capstone_Project__/work/axi_gpio_0.v:7 [compile index 1]
+*** Done mixed mode extension build [116 ms] ***
+*** Total build time [336 ms] ***
