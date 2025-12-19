@@ -1,0 +1,1338 @@
+*** Start analyzing build configuration ***
+INFO: Auto-config - Scanning: /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL
+INFO: Auto-config - VLOG: /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL
+INFO: Auto-config - Wrote:
+    .dvt/default.build.auto.1
+*** List of included argument files ***
+    Build configuration file:  /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/.dvt/default.build
+    -f /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/.dvt/default.build.auto.1
+*** List of invocations ***
+Invocation #1 +dvt_init+dvt in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/.dvt/default.build.auto.1 at line 9
+*** Error: BUILD_CONFIG: [AUTO] Unresolved includes
+    at line 14 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/.dvt/default.build.auto.1:14 [invocation 1]
+*** Warning: BUILD_CONFIG: [AUTO] Missing macro definitions
+    at line 19 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/.dvt/default.build.auto.1:19 [invocation 1]
+*** Warning: BUILD_CONFIG: $UVM_HOME environment variable not set, falling back to $DVT_UVM_HOME
+    at line 11 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/.dvt/default.build.auto.1:11 [invocation 1]
+*** Done analyzing build configuration [101 ms] ***
+
+*** Start SystemVerilog build ***
+*** Invocation #1***
+Loading (1) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_pkg.sv ...
+Loading (2) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_macros.svh ...
+Loading (3) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_version_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_version_defines.svh [0 ms, 151 lines, SystemVerilog_2012] ...
+Loading (4) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_global_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_global_defines.svh [0 ms, 61 lines, SystemVerilog_2012] ...
+Loading (5) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_message_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_message_defines.svh [0 ms, 539 lines, SystemVerilog_2012] ...
+Loading (6) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_phase_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_phase_defines.svh [0 ms, 130 lines, SystemVerilog_2012] ...
+Loading (7) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_object_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_object_defines.svh [50 ms, 3815 lines, SystemVerilog_2012] ...
+Loading (8) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_printer_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_printer_defines.svh [0 ms, 423 lines, SystemVerilog_2012] ...
+Loading (9) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_tlm_defines.svh ...
+Loading (10) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_imps.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_imps.svh [0 ms, 229 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_tlm_defines.svh [2 ms, 617 lines, SystemVerilog_2012] ...
+Loading (11) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_sequence_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_sequence_defines.svh [0 ms, 456 lines, SystemVerilog_2012] ...
+Loading (12) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_callback_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_callback_defines.svh [0 ms, 301 lines, SystemVerilog_2012] ...
+Loading (13) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_reg_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_reg_defines.svh [0 ms, 69 lines, SystemVerilog_2012] ...
+Loading (14) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_deprecated_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/macros/uvm_deprecated_defines.svh [0 ms, 252 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_macros.svh [1 ms, 82 lines, SystemVerilog_2012] ...
+Loading (15) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_dpi.svh ...
+Loading (16) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_hdl.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_hdl.svh [18 ms, 164 lines, SystemVerilog_2012] ...
+Loading (17) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_svcmd_dpi.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_svcmd_dpi.svh [2 ms, 66 lines, SystemVerilog_2012] ...
+Loading (18) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_regex.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_regex.svh [1 ms, 89 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dpi/uvm_dpi.svh [0 ms, 44 lines, SystemVerilog_2012] ...
+Loading (19) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_base.svh ...
+Loading (20) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_coreservice.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_coreservice.svh [12 ms, 224 lines, SystemVerilog_2012] ...
+Loading (21) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_version.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_version.svh [1 ms, 39 lines, SystemVerilog_2012] ...
+Loading (22) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_object_globals.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_object_globals.svh [13 ms, 658 lines, SystemVerilog_2012] ...
+Loading (23) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_misc.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_misc.svh [47 ms, 754 lines, SystemVerilog_2012] ...
+Loading (24) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_object.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_object.svh [24 ms, 1331 lines, SystemVerilog_2012] ...
+Loading (25) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_pool.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_pool.svh [7 ms, 348 lines, SystemVerilog_2012] ...
+Loading (26) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_queue.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_queue.svh [3 ms, 204 lines, SystemVerilog_2012] ...
+Loading (27) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_factory.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_factory.svh [33 ms, 1790 lines, SystemVerilog_2012] ...
+Loading (28) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_registry.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_registry.svh [4 ms, 381 lines, SystemVerilog_2012] ...
+Loading (29) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_spell_chkr.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_spell_chkr.svh [6 ms, 204 lines, SystemVerilog_2012] ...
+Loading (30) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_resource.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_resource.svh [25 ms, 1695 lines, SystemVerilog_2012] ...
+Loading (31) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_resource_specializations.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_resource_specializations.svh [9 ms, 171 lines, SystemVerilog_2012] ...
+Loading (32) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_resource_db.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_resource_db.svh [7 ms, 400 lines, SystemVerilog_2012] ...
+Loading (33) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_config_db.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_config_db.svh [7 ms, 411 lines, SystemVerilog_2012] ...
+Loading (34) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_printer.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_printer.svh [15 ms, 1232 lines, SystemVerilog_2012] ...
+Loading (35) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_comparer.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_comparer.svh [7 ms, 423 lines, SystemVerilog_2012] ...
+Loading (36) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_packer.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_packer.svh [18 ms, 1038 lines, SystemVerilog_2012] ...
+Loading (37) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_links.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_links.svh [6 ms, 371 lines, SystemVerilog_2012] ...
+Loading (38) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_tr_database.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_tr_database.svh [6 ms, 433 lines, SystemVerilog_2012] ...
+Loading (39) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_tr_stream.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_tr_stream.svh [9 ms, 592 lines, SystemVerilog_2012] ...
+Loading (40) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_recorder.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_recorder.svh [10 ms, 1141 lines, SystemVerilog_2012] ...
+Loading (41) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_event_callback.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_event_callback.svh [1 ms, 91 lines, SystemVerilog_2012] ...
+Loading (42) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_event.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_event.svh [5 ms, 395 lines, SystemVerilog_2012] ...
+Loading (43) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_barrier.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_barrier.svh [2 ms, 210 lines, SystemVerilog_2012] ...
+Loading (44) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_callback.svh ...
+Loading (45) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_macros.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_macros.svh [0 ms, 82 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_callback.svh [19 ms, 1199 lines, SystemVerilog_2012] ...
+Loading (46) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_message.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_message.svh [10 ms, 940 lines, SystemVerilog_2012] ...
+Loading (47) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_catcher.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_catcher.svh [7 ms, 713 lines, SystemVerilog_2012] ...
+Loading (48) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_server.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_server.svh [10 ms, 923 lines, SystemVerilog_2012] ...
+Loading (49) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_handler.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_handler.svh [11 ms, 801 lines, SystemVerilog_2012] ...
+Loading (50) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_object.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_report_object.svh [3 ms, 660 lines, SystemVerilog_2012] ...
+Loading (51) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_transaction.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_transaction.svh [4 ms, 781 lines, SystemVerilog_2012] ...
+Loading (52) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_phase.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_phase.svh [38 ms, 2254 lines, SystemVerilog_2012] ...
+Loading (53) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_domain.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_domain.svh [4 ms, 219 lines, SystemVerilog_2012] ...
+Loading (54) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_bottomup_phase.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_bottomup_phase.svh [2 ms, 113 lines, SystemVerilog_2012] ...
+Loading (55) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_topdown_phase.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_topdown_phase.svh [2 ms, 115 lines, SystemVerilog_2012] ...
+Loading (56) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_task_phase.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_task_phase.svh [2 ms, 162 lines, SystemVerilog_2012] ...
+Loading (57) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_common_phases.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_common_phases.svh [4 ms, 452 lines, SystemVerilog_2012] ...
+Loading (58) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_runtime_phases.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_runtime_phases.svh [4 ms, 556 lines, SystemVerilog_2012] ...
+Loading (59) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_component.svh ...
+Loading (60) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_root.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_root.svh [14 ms, 1073 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_component.svh [31 ms, 3639 lines, SystemVerilog_2012] ...
+Loading (61) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_objection.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_objection.svh [16 ms, 1454 lines, SystemVerilog_2012] ...
+Loading (62) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_heartbeat.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_heartbeat.svh [4 ms, 342 lines, SystemVerilog_2012] ...
+Loading (63) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_globals.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_globals.svh [4 ms, 565 lines, SystemVerilog_2012] ...
+Loading (64) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_cmdline_processor.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_cmdline_processor.svh [2 ms, 462 lines, SystemVerilog_2012] ...
+Loading (65) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_traversal.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_traversal.svh [4 ms, 289 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_base.svh [10 ms, 113 lines, SystemVerilog_2012] ...
+Loading (66) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_dap.svh ...
+Loading (67) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_set_get_dap_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_set_get_dap_base.svh [1 ms, 84 lines, SystemVerilog_2012] ...
+Loading (68) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_simple_lock_dap.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_simple_lock_dap.svh [2 ms, 179 lines, SystemVerilog_2012] ...
+Loading (69) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_get_to_lock_dap.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_get_to_lock_dap.svh [2 ms, 155 lines, SystemVerilog_2012] ...
+Loading (70) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_set_before_get_dap.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_set_before_get_dap.svh [2 ms, 185 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/dap/uvm_dap.svh [0 ms, 35 lines, SystemVerilog_2012] ...
+Loading (71) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm.svh ...
+Loading (72) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_ifs.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_ifs.svh [1 ms, 219 lines, SystemVerilog_2012] ...
+Loading (73) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_sqr_ifs.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_sqr_ifs.svh [1 ms, 253 lines, SystemVerilog_2012] ...
+Loading (74) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_port_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_port_base.svh [5 ms, 793 lines, SystemVerilog_2012] ...
+Loading (75) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_imps.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_imps.svh [0 ms, 229 lines, SystemVerilog_2012] ...
+Loading (76) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_imps.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_imps.svh [7 ms, 317 lines, SystemVerilog_2012] ...
+Loading (77) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_ports.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_ports.svh [7 ms, 263 lines, SystemVerilog_2012] ...
+Loading (78) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_exports.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_exports.svh [9 ms, 260 lines, SystemVerilog_2012] ...
+Loading (79) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_analysis_port.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_analysis_port.svh [2 ms, 156 lines, SystemVerilog_2012] ...
+Loading (80) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_fifo_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_fifo_base.svh [2 ms, 253 lines, SystemVerilog_2012] ...
+Loading (81) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_fifos.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_fifos.svh [2 ms, 239 lines, SystemVerilog_2012] ...
+Loading (82) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_req_rsp.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm_req_rsp.svh [2 ms, 349 lines, SystemVerilog_2012] ...
+Loading (83) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_sqr_connections.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_sqr_connections.svh [2 ms, 84 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm1/uvm_tlm.svh [2 ms, 40 lines, SystemVerilog_2012] ...
+Loading (84) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_comps.svh ...
+Loading (85) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_pair.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_pair.svh [2 ms, 171 lines, SystemVerilog_2012] ...
+Loading (86) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_policies.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_policies.svh [0 ms, 142 lines, SystemVerilog_2012] ...
+Loading (87) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_in_order_comparator.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_in_order_comparator.svh [2 ms, 260 lines, SystemVerilog_2012] ...
+Loading (88) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_algorithmic_comparator.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_algorithmic_comparator.svh [1 ms, 135 lines, SystemVerilog_2012] ...
+Loading (89) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_random_stimulus.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_random_stimulus.svh [3 ms, 132 lines, SystemVerilog_2012] ...
+Loading (90) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_subscriber.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_subscriber.svh [0 ms, 68 lines, SystemVerilog_2012] ...
+Loading (91) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_monitor.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_monitor.svh [0 ms, 54 lines, SystemVerilog_2012] ...
+Loading (92) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_driver.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_driver.svh [1 ms, 89 lines, SystemVerilog_2012] ...
+Loading (93) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_push_driver.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_push_driver.svh [1 ms, 97 lines, SystemVerilog_2012] ...
+Loading (94) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_scoreboard.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_scoreboard.svh [0 ms, 56 lines, SystemVerilog_2012] ...
+Loading (95) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_agent.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_agent.svh [2 ms, 136 lines, SystemVerilog_2012] ...
+Loading (96) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_env.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_env.svh [0 ms, 54 lines, SystemVerilog_2012] ...
+Loading (97) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_test.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_test.svh [0 ms, 82 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/comps/uvm_comps.svh [3 ms, 37 lines, SystemVerilog_2012] ...
+Loading (98) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_seq.svh ...
+Loading (99) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_item.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_item.svh [3 ms, 498 lines, SystemVerilog_2012] ...
+Loading (100) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer_base.svh [14 ms, 1775 lines, SystemVerilog_2012] ...
+Loading (101) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer_analysis_fifo.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer_analysis_fifo.svh [1 ms, 39 lines, SystemVerilog_2012] ...
+Loading (102) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer_param_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer_param_base.svh [7 ms, 460 lines, SystemVerilog_2012] ...
+Loading (103) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequencer.svh [2 ms, 347 lines, SystemVerilog_2012] ...
+Loading (104) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_push_sequencer.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_push_sequencer.svh [1 ms, 85 lines, SystemVerilog_2012] ...
+Loading (105) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_base.svh [10 ms, 1405 lines, SystemVerilog_2012] ...
+Loading (106) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence.svh [1 ms, 148 lines, SystemVerilog_2012] ...
+Loading (107) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_library.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_library.svh [10 ms, 813 lines, SystemVerilog_2012] ...
+Loading (108) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_builtin.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_sequence_builtin.svh [5 ms, 301 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/seq/uvm_seq.svh [2 ms, 40 lines, SystemVerilog_2012] ...
+Loading (109) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2.svh ...
+Loading (110) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_defines.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_defines.svh [0 ms, 45 lines, SystemVerilog_2012] ...
+Loading (111) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_time.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_time.svh [1 ms, 333 lines, SystemVerilog_2012] ...
+Loading (112) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_generic_payload.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_generic_payload.svh [14 ms, 1053 lines, SystemVerilog_2012] ...
+Loading (113) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_ifs.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_ifs.svh [1 ms, 178 lines, SystemVerilog_2012] ...
+Loading (114) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_imps.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_imps.svh [2 ms, 203 lines, SystemVerilog_2012] ...
+Loading (115) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_ports.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_ports.svh [2 ms, 75 lines, SystemVerilog_2012] ...
+Loading (116) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_exports.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_exports.svh [2 ms, 65 lines, SystemVerilog_2012] ...
+Loading (117) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_sockets_base.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_sockets_base.svh [4 ms, 195 lines, SystemVerilog_2012] ...
+Loading (118) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_sockets.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2_sockets.svh [5 ms, 435 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/tlm2/uvm_tlm2.svh [2 ms, 30 lines, SystemVerilog_2012] ...
+Loading (119) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_model.svh ...
+Loading (120) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_item.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_item.svh [4 ms, 316 lines, SystemVerilog_2012] ...
+Loading (121) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_adapter.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_adapter.svh [3 ms, 254 lines, SystemVerilog_2012] ...
+Loading (122) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_predictor.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_predictor.svh [3 ms, 265 lines, SystemVerilog_2012] ...
+Loading (123) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_sequence.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_sequence.svh [6 ms, 548 lines, SystemVerilog_2012] ...
+Loading (124) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_cbs.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_cbs.svh [3 ms, 530 lines, SystemVerilog_2012] ...
+Loading (125) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_backdoor.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_backdoor.svh [4 ms, 348 lines, SystemVerilog_2012] ...
+Loading (126) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_field.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_field.svh [16 ms, 2013 lines, SystemVerilog_2012] ...
+Loading (127) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_vreg_field.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_vreg_field.svh [9 ms, 1005 lines, SystemVerilog_2012] ...
+Loading (128) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg.svh [30 ms, 3102 lines, SystemVerilog_2012] ...
+Loading (129) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_indirect.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_indirect.svh [4 ms, 330 lines, SystemVerilog_2012] ...
+Loading (130) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_fifo.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_fifo.svh [2 ms, 311 lines, SystemVerilog_2012] ...
+Loading (131) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_file.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_file.svh [3 ms, 501 lines, SystemVerilog_2012] ...
+Loading (132) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_mem_mam.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_mem_mam.svh [9 ms, 1019 lines, SystemVerilog_2012] ...
+Loading (133) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_vreg.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_vreg.svh [16 ms, 1554 lines, SystemVerilog_2012] ...
+Loading (134) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_mem.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_mem.svh [19 ms, 2410 lines, SystemVerilog_2012] ...
+Loading (135) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_map.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_map.svh [21 ms, 2225 lines, SystemVerilog_2012] ...
+Loading (136) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_block.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_block.svh [15 ms, 2272 lines, SystemVerilog_2012] ...
+Loading (137) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_hw_reset_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_hw_reset_seq.svh [2 ms, 172 lines, SystemVerilog_2012] ...
+Loading (138) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_bit_bash_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_bit_bash_seq.svh [4 ms, 303 lines, SystemVerilog_2012] ...
+Loading (139) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_mem_walk_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_mem_walk_seq.svh [4 ms, 300 lines, SystemVerilog_2012] ...
+Loading (140) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_mem_access_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_mem_access_seq.svh [5 ms, 308 lines, SystemVerilog_2012] ...
+Loading (141) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_access_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_access_seq.svh [4 ms, 366 lines, SystemVerilog_2012] ...
+Loading (142) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh [6 ms, 486 lines, SystemVerilog_2012] ...
+Loading (143) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_mem_built_in_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_mem_built_in_seq.svh [3 ms, 139 lines, SystemVerilog_2012] ...
+Loading (144) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh [5 ms, 175 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/reg/uvm_reg_model.svh [8 ms, 444 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_pkg.sv [3 ms, 43 lines, SystemVerilog_2012] ...
+Loading (145) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_utils_pkg.sv ...
+Loading (146) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh [1 ms, 164 lines, SystemVerilog_2012] ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_utils_pkg.sv [1 ms, 7 lines, SystemVerilog_2012] ...
+Loading (147) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv [8 ms, 312 lines, SystemVerilog_2012] ...
+Loading (148) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv [7 ms, 127 lines, SystemVerilog_2012] ...
+Loading (149) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv [7 ms, 402 lines, SystemVerilog_2012] ...
+Loading (150) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fifo.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fifo.sv [3 ms, 101 lines, SystemVerilog_2012] ...
+Loading (151) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv ...
+Optimizing (152) /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_macros.svh ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv [3 ms, 122 lines, SystemVerilog_2012] ...
+Loading (153) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fsm.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fsm.sv [2 ms, 169 lines, SystemVerilog_2012] ...
+Loading (154) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_func_wrapper.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_func_wrapper.sv [3 ms, 134 lines, SystemVerilog_2012] ...
+Loading (155) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv [1 ms, 200 lines, SystemVerilog_2012] ...
+Loading (156) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv [16 ms, 642 lines, SystemVerilog_2012] ...
+Loading (157) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v [14 ms, 865 lines, Verilog_2001] ...
+Loading (158) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/apb_csr.v ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/apb_csr.v [2 ms, 226 lines, Verilog_2001] ...
+Loading (159) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/clauses_bram.v ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/clauses_bram.v [0 ms, 36 lines, Verilog_2001] ...
+Loading (160) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v [2 ms, 116 lines, Verilog_2001] ...
+Loading (161) /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/weights_bram.v ...
+Done /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/weights_bram.v [1 ms, 36 lines, Verilog_2001] ...
+*** Done invocation #1 [992 ms] ***
+*** Done parsing [LT 625 ms, PT 992 ms] ***
+*** Total number of lines [79 458] ***
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 55 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:55 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 27 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:27 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 28 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:28 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 47 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:47 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 82 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:82 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 85 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:85 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 91 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:91 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 92 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:92 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 95 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:95 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 109 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:109 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 118 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:118 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 127 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:127 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 131 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:131 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 230 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:230 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 33 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:33 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 85 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:85 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 88 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:88 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 91 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:91 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 121 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:121 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_ADDR_WIDTH
+    at line 139 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:139 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `AXI_DATA_WIDTH
+    at line 13 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fifo.sv:13 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Cannot open `include file "rggen_ral_macros.svh"
+    at line 5 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:5 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 14 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:14 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 15 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:15 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 16 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:16 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 27 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:27 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 28 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:28 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 29 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:29 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 38 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:38 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 49 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:49 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 50 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:50 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 51 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:51 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 60 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:60 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 69 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:69 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 78 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:78 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 89 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:89 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 90 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:90 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_field
+    at line 91 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:91 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 107 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:107 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 108 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:108 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 109 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:109 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 110 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:110 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 111 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:111 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 112 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:112 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 113 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:113 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 114 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:114 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 115 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:115 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 116 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:116 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 117 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:117 [compile index 1][invocation 1]
+*** Error: SYSTEM_VERILOG_2012: Undefined macro name: `rggen_ral_create_reg
+    at line 118 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:118 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Cannot open `include file "rggen_rtl_macros.vh"
+    at line 1 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:1 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 116 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:116 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 148 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:148 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 176 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:176 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 204 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:204 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 237 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:237 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 287 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:287 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 357 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:357 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 422 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:422 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 545 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:545 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 577 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:577 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 613 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:613 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 645 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:645 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 681 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:681 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 713 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:713 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Number of macro instance parameters 4 not equal to macro define parameters 3
+    at line 749 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:749 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 781 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:781 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 809 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:809 [compile index 1][invocation 1]
+*** Error: VERILOG_2001: Undefined macro name: `rggen_slice
+    at line 837 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:837 [compile index 1][invocation 1]
+*** Warning: SYSTEM_VERILOG_2012: Expecting `endif label 'UVM_CMDLINE_PROCESSOR_SV' found 'UVM_CMDLINE_PROC_PKG_SV'
+    at line 460 in /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/base/uvm_cmdline_processor.svh:460 [compile index 1][invocation 1]
+Performing post full build actions ...
+Performing post full build step 1 (SRI) [3 ms] ...
+Performing post full build step 2 (RI) [9 ms] ...
+Performing post full build step 3 (RCP) [137 ms] ...
+*** Files summary [161 total, 158 unique, 1 optimized] ***
+*** Done SystemVerilog build [1s.257ms] ***
+
+*** Start mixed mode extension build ***
+Performing mixed post full build step (VLOG - RI) [7 ms] ...
+*** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
+*** Top design candidates: work.tb_axi_dma, work.csr_dma, work.csr, work.nn_acc_ss
+Performing mixed post full build step (MIXED - ELAB) [357 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [803 ms] ...
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 130 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:130 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 131 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:131 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_size_t'
+    at line 132 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:132 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 133 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:133 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 146 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:146 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 150 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:150 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 160 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:160 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 161 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:161 [compile index 146]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_mosi_t'
+    at line 20 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:20 [compile index 148]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_miso_t'
+    at line 21 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:21 [compile index 148]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine default value of parameter 'dma_axi_wrapper.AXI_DATA_WIDTH' from expression: `AXI_DATA_WIDTH
+    at line 33 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:33 [compile index 148]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 19 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:19 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_prot_t'
+    at line 20 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:20 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 23 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:23 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 24 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:24 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 30 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:30 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_prot_t'
+    at line 31 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:31 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_resp_t'
+    at line 42 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:42 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 47 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:47 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_resp_t'
+    at line 48 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:48 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_tid_t'
+    at line 55 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:55 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 56 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:56 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 57 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:57 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_size_t'
+    at line 58 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:58 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_burst_t'
+    at line 59 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:59 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_prot_t'
+    at line 62 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:62 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_user_req_t'
+    at line 65 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:65 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 68 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:68 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 69 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:69 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_user_data_t'
+    at line 71 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:71 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_tid_t'
+    at line 76 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:76 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 77 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:77 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 78 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:78 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_size_t'
+    at line 79 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:79 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_burst_t'
+    at line 80 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:80 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_prot_t'
+    at line 83 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:83 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_user_req_t'
+    at line 86 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:86 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_tid_t'
+    at line 97 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:97 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_resp_t'
+    at line 98 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:98 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_user_rsp_t'
+    at line 99 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:99 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_tid_t'
+    at line 104 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:104 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 105 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:105 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_resp_t'
+    at line 106 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:106 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_user_data_t'
+    at line 108 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:108 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axil_mosi_t'
+    at line 111 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:111 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axil_miso_t'
+    at line 112 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:112 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_mosi_t'
+    at line 114 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:114 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_miso_t'
+    at line 115 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:115 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awaddr' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 119 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:119 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awprot' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 120 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:120 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 121 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:121 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wdata' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 122 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:122 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wstrb' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 123 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:123 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wvalid' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 124 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:124 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bready' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 125 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:125 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'araddr' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 126 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:126 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arprot' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 127 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:127 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 128 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:128 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rready' is not a member of 'dma_s_mosi' (type 's_axil_mosi_t' is undeclared)
+    at line 129 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:129 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 131 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:131 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wready' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 132 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:132 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bresp' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 133 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:133 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bvalid' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 134 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:134 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 135 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:135 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rdata' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 136 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:136 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rresp' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 137 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:137 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rvalid' is not a member of 'dma_s_miso' (type 's_axil_miso_t' is undeclared)
+    at line 138 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:138 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awid' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 141 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:141 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awaddr' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 142 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:142 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awlen' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 143 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:143 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awsize' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 144 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:144 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awburst' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 145 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:145 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awlock' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 146 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:146 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awcache' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 147 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:147 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awprot' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 148 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:148 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awqos' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 149 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:149 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awregion' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 150 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:150 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awuser' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 151 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:151 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 152 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:152 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wdata' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 153 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:153 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wstrb' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 154 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:154 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wlast' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 155 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:155 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wuser' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 156 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:156 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wvalid' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 157 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:157 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bready' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 158 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:158 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arid' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 159 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:159 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'araddr' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 160 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:160 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arlen' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 161 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:161 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arsize' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 162 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:162 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arburst' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 163 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:163 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arlock' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 164 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:164 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arcache' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 165 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:165 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arprot' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 166 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:166 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arqos' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 167 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:167 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arregion' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 168 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:168 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'aruser' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 169 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:169 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 170 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:170 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rready' is not a member of 'dma_m_mosi' (type 's_axi_mosi_t' is undeclared)
+    at line 171 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:171 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 173 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:173 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wready' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 174 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:174 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bid' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 175 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:175 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bresp' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 176 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:176 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'buser' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 177 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:177 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bvalid' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 178 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:178 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 179 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:179 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rid' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 180 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:180 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rdata' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 181 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:181 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rresp' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 182 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:182 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rlast' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 183 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:183 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'ruser' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 184 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:184 [compile index 155]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rvalid' is not a member of 'dma_m_miso' (type 's_axi_miso_t' is undeclared)
+    at line 185 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:185 [compile index 155]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 31 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:31 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 45 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:45 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 46 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:46 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 81 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:81 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 90 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:90 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 108 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:108 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 126 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:126 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 140 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:140 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 140 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:140 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 141 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:141 [compile index 147]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 142 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:142 [compile index 147]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_alen_t' is not declared
+    at line 154 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:154 [compile index 147]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_size_t' is not declared
+    at line 230 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:230 [compile index 147]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_alen_t' is not declared
+    at line 239 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:239 [compile index 147]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_addr_t' is not declared
+    at line 270 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:270 [compile index 147]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_addr_t' is not declared
+    at line 296 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:296 [compile index 147]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine default value of parameter 'dma_streamer.max_txn_width' from expression: $clog2((256 * (`AXI_DATA_WIDTH / 8)))
+    at line 28 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:28 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d1' of '32-bit' type
+    at line 50 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:50 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d2' of '32-bit' type
+    at line 51 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:51 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d3' of '32-bit' type
+    at line 52 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:52 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d4' of '32-bit' type
+    at line 53 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:53 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d5' of '32-bit' type
+    at line 54 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:54 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d6' of '32-bit' type
+    at line 55 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:55 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d7' of '32-bit' type
+    at line 56 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:56 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d1' of '32-bit' type
+    at line 63 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:63 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d2' of '32-bit' type
+    at line 64 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:64 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d3' of '32-bit' type
+    at line 65 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:65 [compile index 147]
+*** Warning: CASE_ITEM_WIDTH_MISMATCH: Comparison between case expression 'bytes' of '4-bit' type and item expression ''d4' of '32-bit' type
+    at line 66 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:66 [compile index 147]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'addr' of '3-bit' type from ''d0' of '32-bit' type
+    at line 248 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:248 [compile index 147]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'addr' of '3-bit' type from ''d0' of '32-bit' type
+    at line 257 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:257 [compile index 147]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'last_txn_proc' of '1-bit' type from ''b1' of '32-bit' type
+    at line 282 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:282 [compile index 147]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine default value of parameter 'dma_fifo.WIDTH' from expression: `AXI_DATA_WIDTH
+    at line 13 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fifo.sv:13 [compile index 150]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_mosi_t'
+    at line 22 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:22 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_miso_t'
+    at line 23 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:23 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 36 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:36 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 43 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:43 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_addr_t'
+    at line 44 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:44 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_alen_t'
+    at line 54 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:54 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 58 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:58 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_wr_strb_t'
+    at line 58 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:58 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'axi_data_t'
+    at line 59 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:59 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_wr_strb_t' is not declared
+    at line 60 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:60 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_wr_strb_t' is not declared
+    at line 99 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:99 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 190 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:190 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 190 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:190 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rvalid' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 191 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:191 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rlast' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 192 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:192 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rready' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 193 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:193 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 194 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:194 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 194 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:194 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bvalid' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 195 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:195 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bready' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 195 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:195 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 211 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:211 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wlast' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 212 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:212 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 213 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:213 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 236 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:236 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 236 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:236 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_alen_t' is not declared
+    at line 247 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:247 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 's_axi_mosi_t' is not declared
+    at line 252 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:252 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arprot' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 262 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:262 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_NONSECURE' is not declared
+    at line 262 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:262 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 263 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:263 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_tid_t' is not declared
+    at line 263 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:263 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 265 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:265 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 266 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:266 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 267 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:267 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'araddr' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 268 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:268 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arlen' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 269 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:269 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arsize' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 270 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:270 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arburst' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 271 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:271 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_INCR' is not declared
+    at line 271 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:271 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_FIXED' is not declared
+    at line 271 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:271 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rready' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 274 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:274 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rvalid' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 275 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:275 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rdata' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 277 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:277 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rlast' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 278 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:278 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rready' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 278 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:278 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rresp' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 279 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:279 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_SLVERR' is not declared
+    at line 279 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:279 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'rresp' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 280 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:280 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_DECERR' is not declared
+    at line 280 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:280 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awprot' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 284 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:284 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_NONSECURE' is not declared
+    at line 284 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:284 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 285 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:285 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'axi_tid_t' is not declared
+    at line 285 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:285 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 294 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:294 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 296 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:296 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 297 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:297 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awaddr' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 298 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:298 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awlen' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 299 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:299 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awsize' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 300 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:300 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awburst' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 301 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:301 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_INCR' is not declared
+    at line 301 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:301 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_FIXED' is not declared
+    at line 301 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:301 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 302 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:302 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 306 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:306 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wdata' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 307 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:307 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wstrb' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 308 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:308 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wlast' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 309 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:309 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'wvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 310 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:310 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bready' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 313 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:313 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bvalid' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 314 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:314 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bresp' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 315 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:315 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_SLVERR' is not declared
+    at line 315 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:315 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'bresp' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 316 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:316 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'AXI_DECERR' is not declared
+    at line 316 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:316 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 356 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:356 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 356 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:356 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 358 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:358 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 358 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:358 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'araddr' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 358 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:358 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 360 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:360 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 360 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:360 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arlen' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 360 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:360 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 362 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:362 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 362 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:362 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arsize' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 362 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:362 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 364 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:364 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 364 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:364 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'arburst' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 364 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:364 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 367 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:367 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 367 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:367 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 369 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:369 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 369 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:369 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awaddr' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 369 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:369 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 371 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:371 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 371 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:371 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awlen' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 371 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:371 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 373 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:373 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awready' is not a member of 'dma_miso_i' (type 's_axi_miso_t' is undeclared)
+    at line 373 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:373 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awsize' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 373 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:373 [compile index 149]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'awvalid' is not a member of 'dma_mosi_o' (type 's_axi_mosi_t' is undeclared)
+    at line 375 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:375 [compile index 149]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine actual value of parameter 'dma_fifo.WIDTH' from expression: $bits(s_wr_req_t)
+    at line 77 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:77 [compile index 149]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine actual value of parameter 'dma_fifo.WIDTH' from expression: $bits(axi_wr_strb_t)
+    at line 99 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:99 [compile index 149]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine actual value of parameter 'dma_fifo.WIDTH' from expression: `AXI_ADDR_WIDTH
+    at line 121 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:121 [compile index 149]
+*** Warning: UNRESOLVED_PARAMETER_VALUE: Cannot determine actual value of parameter 'dma_fifo.WIDTH' from expression: `AXI_ADDR_WIDTH
+    at line 139 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:139 [compile index 149]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'next_rd_counter' of '4-bit' type from ''d0' of '32-bit' type
+    at line 207 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:207 [compile index 149]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'next_wr_counter' of '4-bit' type from ''d0' of '32-bit' type
+    at line 208 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:208 [compile index 149]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_axi4lite_if.slave'
+    at line 35 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:35 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_axi4lite_adapter' is not declared
+    at line 52 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:52 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_register_if' is not declared
+    at line 51 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:51 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 71 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:71 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 306 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:306 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 73 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:73 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 308 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:308 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 324 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:324 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 326 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:326 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 376 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:376 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 350 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:350 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 378 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:378 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 352 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:352 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 89 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:89 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 167 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:167 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 91 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:91 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 115 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:115 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 169 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:169 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 117 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:117 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 141 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:141 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 143 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:143 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 262 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:262 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 264 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:264 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 185 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:185 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 210 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:210 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 187 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:187 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 212 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:212 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 236 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:236 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 238 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:238 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 498 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:498 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 404 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:404 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 500 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:500 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 406 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:406 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 280 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:280 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 282 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:282 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 545 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:545 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 547 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:547 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 451 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:451 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_default_register' is not declared
+    at line 453 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:453 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 516 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:516 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 518 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:518 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 422 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:422 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 424 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:424 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 563 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:563 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 565 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:565 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 589 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:589 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 591 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:591 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 615 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:615 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 617 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:617 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field_if' is not declared
+    at line 469 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:469 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'rggen_bit_field' is not declared
+    at line 471 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:471 [compile index 156]
+*** Warning: UNDECLARED_MODULE: Module 'blk_sram' is not declared
+    at line 18 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/clauses_bram.v:18 [compile index 159]
+*** Warning: UNDECLARED_MODULE: Module 'blk_sram' is not declared
+    at line 18 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/weights_bram.v:18 [compile index 161]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'HEIGHT' is not declared
+    at line 8 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:8 [compile index 160]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'WIDTH' is not declared
+    at line 8 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:8 [compile index 160]
+*** Warning: UNDECLARED_MODULE: Module 'class_top' is not declared
+    at line 3 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:3 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'addra' of '10-bit' type from 'addra' of '1-bit' type
+    at line 44 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:44 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'dina' of '256-bit' type from 'dina' of '1-bit' type
+    at line 45 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:45 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'addrb' of '10-bit' type from 'bram_addr_a' of '1-bit' type
+    at line 50 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:50 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'clause_write' of '1-bit' type from 'doutb' of '256-bit' type
+    at line 51 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:51 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'addra' of '10-bit' type from 'addra' of '1-bit' type
+    at line 67 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:67 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'dina' of '256-bit' type from 'dina' of '1-bit' type
+    at line 68 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:68 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'addrb' of '10-bit' type from 'bram_addr_a2' of '1-bit' type
+    at line 73 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:73 [compile index 160]
+*** Warning: WIDTH_MISMATCH_IMPLICIT_SIGNAL: Assignment to 'weight_write' of '1-bit' type from 'doutb' of '256-bit' type
+    at line 74 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:74 [compile index 160]
+*** Warning: UNDECLARED_MODULE: Module 'src' is not declared
+    at line 78 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:78 [compile index 160]
+*** Warning: UNDECLARED_MODULE: Module 'dma' is not declared
+    at line 102 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:102 [compile index 160]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_mosi_t'
+    at line 22 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_func_wrapper.sv:22 [compile index 154]
+*** Error: NON_EXISTING_TYPE: Non existing type 's_axi_miso_t'
+    at line 23 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_func_wrapper.sv:23 [compile index 154]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'idx' of '1-bit' type from 'i' of '32-bit' type
+    at line 95 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fsm.sv:95 [compile index 153]
+*** Warning: WIDTH_MISMATCH_TRUNCATION: Assignment to 'idx' of '1-bit' type from 'i' of '32-bit' type
+    at line 121 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fsm.sv:121 [compile index 153]
+*** Warning: UNELABORATED_MODULE: Module 'work.csr_dma' is not elaborated
+    at line 2 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:2 [compile index 157]
+*** Warning: UNELABORATED_PACKAGE: Package 'work.uvm_pkg' is not elaborated
+    at line 28 in /home/IITBBS0125_10108/.vscode/extensions/amiq.dvt-25.3.22-linux-x64/dvt_home/common/predefined_projects/libs/uvm-1.2/src/uvm_pkg.sv:28 [compile index 1]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 7 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:7 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 8 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:8 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:9 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 11 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:11 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 20 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:20 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 21 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:21 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 22 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:22 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 24 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:24 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 33 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:33 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 35 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:35 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 42 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:42 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 43 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:43 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 44 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:44 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 46 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:46 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 55 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:55 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 57 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:57 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 64 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:64 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 66 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:66 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 73 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:73 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 75 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:75 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 82 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:82 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 83 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:83 [compile index 151]
+*** Error: NON_EXISTING_TYPE: Non existing type 'rggen_ral_field'
+    at line 84 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:84 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 86 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:86 [compile index 151]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'new' is not a member of 'super'
+    at line 104 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:104 [compile index 151]
+*** Warning: UNELABORATED_PACKAGE: Package 'work.csr_dma_ral_pkg' is not elaborated
+    at line 1 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:1 [compile index 151]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 3 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/inc/dma_pkg.svh:3 [compile index 146]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_streamer.sv:9 [compile index 147]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:9 [compile index 148]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_if.sv:9 [compile index 149]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fifo.sv:9 [compile index 150]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'rggen_ral_pkg'
+    at line 3 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:3 [compile index 151]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fsm.sv:9 [compile index 153]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_func_wrapper.sv:9 [compile index 154]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'amba_axi_pkg'
+    at line 9 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:9 [compile index 155]
+*** Error: NON_EXISTING_PACKAGE: Non existing package 'rggen_rtl_pkg'
+    at line 23 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv:23 [compile index 156]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 6 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:6 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 19 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:19 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 32 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:32 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 41 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:41 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 54 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:54 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 63 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:63 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 72 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:72 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_reg'
+    at line 81 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:81 [compile index 151]
+*** Error: EXTEND_CLASS: Extending non existing class 'rggen_ral_block'
+    at line 94 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma_ral_pkg.sv:94 [compile index 151]
+Performing mixed post full build step (VLOG - RD) [19 ms] ...
+Performing mixed post full build step (VLOG - US) [51 ms] ...
+*** Warning: DUPLICATE_MODULE: Duplicate module 'csr_dma', already declared
+    at line 22 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.sv
+    at line 2 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/csr_out/csr_dma.v:2 [compile index 157]
+*** Warning: PARAMETER_NEVER_USED: Parameter 'AXI_DATA_WIDTH' is never used
+    at line 33 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:33 [compile index 148]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dma_desc_src_vec' is never written
+    at line 38 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:38 [compile index 148]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dma_desc_dst_vec' is never written
+    at line 39 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:39 [compile index 148]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dma_desc_byt_vec' is never written
+    at line 40 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:40 [compile index 148]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dma_desc_wr_mod' is never written
+    at line 41 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:41 [compile index 148]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dma_desc_rd_mod' is never written
+    at line 42 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:42 [compile index 148]
+*** Warning: SIGNAL_NEVER_READ: Signal 'dma_error' is never read (connected to sub-instance output port)
+    at line 51 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_axi_wrapper.sv:51 [compile index 148]
+*** Warning: SIGNAL_NOT_RESET: Signal 'fifo_ff' is not reset
+    at line 80 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/dma_fifo.sv:80 [compile index 150]
+*** Warning: SIGNAL_NEVER_USED: Signal 'dma_s_wlast' is never used
+    at line 25 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:25 [compile index 155]
+*** Warning: SIGNAL_NEVER_USED: Signal 'dma_s_rlast' is never used
+    at line 49 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:49 [compile index 155]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dma_s_miso' is never written
+    at line 112 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/DMA/rtl/tb_axi_dma.sv:112 [compile index 155]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'clk' using `default_nettype set to wire
+    at line 10 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:10 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'rst' using `default_nettype set to wire
+    at line 11 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:11 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'model_params' using `default_nettype set to wire
+    at line 13 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:13 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'total_img' using `default_nettype set to wire
+    at line 14 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:14 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'clause_write' using `default_nettype set to wire
+    at line 15 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:15 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'weight_write' using `default_nettype set to wire
+    at line 16 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:16 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'tvalid' using `default_nettype set to wire
+    at line 18 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:18 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'tkeep' using `default_nettype set to wire
+    at line 19 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:19 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'tlast' using `default_nettype set to wire
+    at line 20 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:20 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'bram_addr_a' using `default_nettype set to wire
+    at line 22 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:22 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'bram_addr_a2' using `default_nettype set to wire
+    at line 23 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:23 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'tready' using `default_nettype set to wire
+    at line 24 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:24 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'enb' using `default_nettype set to wire
+    at line 25 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:25 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'output_params' using `default_nettype set to wire
+    at line 27 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:27 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'web' using `default_nettype set to wire
+    at line 28 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:28 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'dinb' using `default_nettype set to wire
+    at line 29 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:29 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'clka' using `default_nettype set to wire
+    at line 40 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:40 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'clka' is never written (connected to sub-instance input port)
+    at line 40 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:40 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'reset' using `default_nettype set to wire
+    at line 41 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:41 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'reset' is never written (connected to sub-instance input port)
+    at line 41 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:41 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'ena' using `default_nettype set to wire
+    at line 42 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:42 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'ena' is never written (connected to sub-instance input port)
+    at line 42 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:42 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'wea' using `default_nettype set to wire
+    at line 43 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:43 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'wea' is never written (connected to sub-instance input port)
+    at line 43 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:43 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'addra' using `default_nettype set to wire
+    at line 44 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:44 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'addra' is never written (connected to sub-instance input port)
+    at line 44 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:44 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'dina' using `default_nettype set to wire
+    at line 45 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:45 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'dina' is never written (connected to sub-instance input port)
+    at line 45 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:45 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'clkb' using `default_nettype set to wire
+    at line 48 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:48 [compile index 160]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'clkb' is never written (connected to sub-instance input port)
+    at line 48 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:48 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PADDR' using `default_nettype set to wire
+    at line 85 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:85 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PSEL' using `default_nettype set to wire
+    at line 86 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:86 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PENABLE' using `default_nettype set to wire
+    at line 87 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:87 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PWRITE' using `default_nettype set to wire
+    at line 88 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:88 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PWDATA' using `default_nettype set to wire
+    at line 89 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:89 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PRDATA' using `default_nettype set to wire
+    at line 93 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:93 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PREADY' using `default_nettype set to wire
+    at line 94 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:94 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'PSLVERR' using `default_nettype set to wire
+    at line 95 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:95 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'start' using `default_nettype set to wire
+    at line 98 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:98 [compile index 160]
+*** Warning: IMPLICIT_DECLARATION: Implicit declaration of 'tdata' using `default_nettype set to wire
+    at line 105 in /home/IITBBS0125_10108/Capstone_Project__/nn_acc_ss/RTL/nn_acc_ss.v:105 [compile index 160]
+*** Done mixed mode extension build [1s.261ms] ***
+*** Total build time [2s.664ms] ***
