@@ -1,7 +1,6 @@
-
 module acc_datapath_regs #(
     parameter IN_WIDTH  = 1024,
-    parameter OUT_WIDTH = 32
+    parameter OUT_WIDTH = 4
 )(
     input  wire                  clk,
     input  wire                  rst_n,
@@ -59,7 +58,7 @@ module acc_datapath_regs #(
     end
 
     //========================================================
-    // Output Data Register (Captured from Accelerator)
+    // 4-bit Output Data Register
     //========================================================
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
@@ -79,17 +78,14 @@ module acc_datapath_regs #(
             done <= 1'b0;
         end
         else begin
-            /* Busy goes high when start is asserted */
             if (start)
                 busy <= 1'b1;
 
-            /* Done asserted when output is captured */
             if (out_data_cap_en) begin
                 busy <= 1'b0;
                 done <= 1'b1;
             end
 
-            /* Stop clears everything */
             if (stop) begin
                 busy <= 1'b0;
                 done <= 1'b0;
