@@ -1,27 +1,97 @@
-module Bridge_Top(Hclk,Hresetn,Hwrite,Hreadyin,Hreadyout,Hwdata,Haddr,Htrans,Prdata,Penable,Pwrite,Pselx,Paddr,Pwdata,Hreadyout,Hresp,Hrdata);
+module Bridge_Top (
+    input  wire        Hclk,
+    input  wire        Hresetn,
 
-input Hclk,Hresetn,Hwrite,Hreadyin;
-input [31:0] Hwdata,Haddr,Prdata;
-input[1:0] Htrans;
-output Penable,Pwrite,Hreadyout;
-output [1:0] Hresp; 
-output [2:0] Pselx;
-output [31:0] Paddr,Pwdata;
-output [31:0] Hrdata;
+    // AHB side
+    input  wire        Hwrite,
+    input  wire        Hreadyin,
+    input  wire [1:0]  Htrans,
+    input  wire [31:0] Haddr,
+    input  wire [31:0] Hwdata,
 
-///////////////////////////////////////////////////////////////INTERMEDIATE SIGNALS
+    output wire        Hreadyout,
+    output wire [1:0]  Hresp,
+    output wire [31:0] Hrdata,
 
-wire valid;
-wire [31:0] Haddr1,Haddr2,Hwdata1,Hwdata2;
-wire Hwritereg;
-wire [2:0] tempselx;
+    // APB side
+    output wire        Pwrite,
+    output wire        Penable,
+    output wire [2:0]  Pselx,
+    output wire [31:0] Paddr,
+    output wire [31:0] Pwdata
+);
 
-/////////////////////////////////////////////////////////////// MODULE INSTANTIATIONS
+    // ------------------------------------------------
+    // Internal wires
+    // ------------------------------------------------
+    wire        valid;
+    wire [31:0] Haddr1, Haddr2;
+    wire [31:0] Hwdata1, Hwdata2;
+    wire        Hwritereg;
+    wire [2:0]  tempselx;
+    wire [31:0] Prdata;
 
+    // ------------------------------------------------
+    // AHB Slave Interface
+    // ------------------------------------------------
+    AHB_slave_interface u_ahb_slave (
+        .Hclk      (Hclk),
+        .Hresetn   (Hresetn),
+        .Hwrite    (Hwrite),
+        .Hreadyin  (Hreadyin),
+        .Htrans    (Htrans),
+        .Haddr     (Haddr),
+        .Hwdata    (Hwdata),
+        .Prdata    (Prdata),
+        .valid     (valid),
+        .Haddr1    (Haddr1),
+        .Haddr2    (Haddr2),
+        .Hwdata1   (Hwdata1),
+        .Hwdata2   (Hwdata2),
+        .Hrdata    (Hrdata),
+        .Hwritereg (Hwritereg),
+        .tempselx  (tempselx),
+        .Hresp     (Hresp)
+    );
 
-AHB_slave_interface AHBSlave (Hclk,Hresetn,Hwrite,Hreadyin,Htrans,Haddr,Hwdata,Prdata,valid,Haddr1,Haddr2,Hwdata1,Hwdata2,Hrdata,Hwritereg,tempselx,Hresp);
+    // ------------------------------------------------
+    // APB FSM Controller
+    // ------------------------------------------------
+    APB_FSM_Controller u_apb_fsm (
+        .Hclk      (Hclk),
+        .Hresetn   (Hresetn),
+        .valid     (valid),
+        .Hwrite    (Hwrite),
+        .Hwritereg (Hwritereg),
+        .Haddr     (Haddr),
+        .Haddr1    (Haddr1),
+        .Haddr2    (Haddr2),
+        .Hwdata1   (Hwdata1),
+        .Hwdata2   (Hwdata2),
+        .tempselx  (tempselx),
+        .Pwrite    (Pwrite),
+        .Penable   (Penable),
+        .Pselx     (Pselx),
+        .Paddr     (Paddr),
+        .Pwdata    (Pwdata),
+        .Hreadyout (Hreadyout)
+    );
 
-APB_FSM_Controller APBControl ( Hclk,Hresetn,valid,Haddr1,Haddr2,Hwdata1,Hwdata2,Prdata,Hwrite,Haddr,Hwdata,Hwritereg,tempselx,Pwrite,Penable,Pselx,Paddr,Pwdata,Hreadyout);
-
+    // ------------------------------------------------
+    // APB Peripheral Interface
+    // ------------------------------------------------
+    APB_Interface u_apb_if (
+        .Pwrite    (Pwrite),
+        .Penable   (Penable),
+        .Pselx     (Pselx),
+        .Paddr     (Paddr),
+        .Pwdata    (Pwdata),
+        .Pwriteout (),
+        .Penableout(),
+        .Pselxout  (),
+        .Paddrout  (),
+        .Pwdataout (),
+        .Prdata    (Prdata)
+    );
 
 endmodule

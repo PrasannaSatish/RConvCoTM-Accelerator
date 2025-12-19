@@ -1,26 +1,36 @@
-module APB_Interface(Pwrite,Pselx,Penable,Paddr,Pwdata,Pwriteout,Pselxout,Penableout,Paddrout,Pwdataout,Prdata);
+module APB_Interface (
+    input  wire        Pwrite,
+    input  wire        Penable,
+    input  wire [2:0]  Pselx,
+    input  wire [31:0] Paddr,
+    input  wire [31:0] Pwdata,
 
-input Pwrite,Penable;
-input [2:0] Pselx;
-input [31:0] Pwdata,Paddr;
+    output wire        Pwriteout,
+    output wire        Penableout,
+    output wire [2:0]  Pselxout,
+    output wire [31:0] Paddrout,
+    output wire [31:0] Pwdataout,
 
-output Pwriteout,Penableout;
-output [2:0] Pselxout;
-output [31:0] Pwdataout,Paddrout;
-output reg [31:0] Prdata;
+    output reg  [31:0] Prdata
+);
 
-assign Penableout=Penable;
-assign Pselxout=Pselx;
-assign Pwriteout=Pwrite;
-assign Paddrout=Paddr;
-assign Pwdataout=Pwdata;
+    // ------------------------------------------------
+    // Pass-through APB signals
+    // ------------------------------------------------
+    assign Pwriteout  = Pwrite;
+    assign Penableout = Penable;
+    assign Pselxout   = Pselx;
+    assign Paddrout   = Paddr;
+    assign Pwdataout  = Pwdata;
 
-always @(*)
- begin
-  if (~Pwrite && Penable)
-   Prdata=($random)%256;
-  else
-   Prdata=0;
- end
+    // ------------------------------------------------
+    // Simple APB read data logic
+    // ------------------------------------------------
+    always @(*) begin
+        if (!Pwrite && Penable && (Pselx != 3'b000))
+            Prdata = {24'b0, Paddr[7:0]};  // example readable data
+        else
+            Prdata = 32'b0;
+    end
 
 endmodule
