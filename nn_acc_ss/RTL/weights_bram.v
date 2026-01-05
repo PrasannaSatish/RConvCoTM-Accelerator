@@ -1,35 +1,43 @@
 module blk_mem_gen_1 #(
-    parameter ADDR_WIDTH = 10,
+    parameter ADDR_WIDTH = 11,
     parameter DATA_WIDTH = 256
 )(
-    input clka,
-    input reset,
-    input ena,
-    input wea,
-    input [ADDR_WIDTH-1:0] addra,
-    input [DATA_WIDTH-1:0] dina,
+    input  wire                     clka,
+    input  wire                     reset,
+    input  wire                     ena,
+    input  wire                     wea,
+    input  wire [ADDR_WIDTH-1:0]    addra,
+    input  wire [DATA_WIDTH-1:0]    dina,
 
-    input clkb,
-    input enb,
-    input [ADDR_WIDTH-1:0] addrb,
-    output [DATA_WIDTH-1:0] doutb
+    input  wire                     clkb,
+    input  wire                     enb,
+    input  wire [ADDR_WIDTH-1:0]    addrb,
+    output wire [DATA_WIDTH-1:0]    doutb
 );
 
+    // Active-low reset for SRAM (memory NOT cleared)
+    wire reset_n = ~reset;
+
+    // ====================================================
+    // WEIGHT SRAM WITH BINARY PRELOAD
+    // ====================================================
     blk_sram #(
         .ADDR_WIDTH(ADDR_WIDTH),
-        .DATA_WIDTH(DATA_WIDTH)
+        .DATA_WIDTH(DATA_WIDTH),
+        .INIT_FILE("weights.txt")   // <-- BINARY INIT FILE
     ) u_sram (
-        .clka(clka),
-        .reset(reset),
-        .ena(ena),
-        .wea(wea),
-        .addra(addra),
-        .dina(dina),
+        .clka   (clka),
+        .reset_n(reset_n),   // reset does NOT wipe memory
+        .ena    (ena),
+        .wea    (wea),
+        .addra  (addra),
+        .dina   (dina),
 
-        .clkb(clkb),
-        .enb(enb),
-        .addrb(addrb),
-        .doutb(doutb)
+        .clkb   (clkb),
+        .enb    (enb),
+        .addrb  (addrb),
+        .doutb  (doutb)
     );
 
 endmodule
+
